@@ -10,7 +10,7 @@ class dexRequest {
     });
     this.instance.interceptors.response.use(
       (res) => {
-        return res.data;
+        return res.data.data;
       },
       (err) => {
         return err;
